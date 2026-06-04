@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+section{
+    background:white;
+    margin:20px auto;
+    width:90%;
+    max-width:800px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+select,
+input[type="file"],
+input[type="text"]{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px 20px;
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#162d6b;
+}
+
+#result{
+    background:#eef4ff;
+    padding:15px;
+    border-radius:6px;
+    line-height:1.8;
+}
+
+#chatResponse{
+    margin-top:15px;
+    background:#eef4ff;
+    padding:15px;
+    border-radius:6px;
+    min-height:50px;
+}
+
+footer{
+    text-align:center;
+    background:#1e3a8a;
+    color:white;
+    padding:15px;
+    margin-top:30px;
+}
