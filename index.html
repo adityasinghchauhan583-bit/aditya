@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FakeDoc Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FakeDoc Detector</h1>
+        <p>AI-Powered Document Forgery Detection System</p>
+    </header>
+
+    <section class="language-section">
+        <label>Select Language:</label>
+
+        <select id="language">
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Tamil</option>
+            <option>Telugu</option>
+            <option>Bengali</option>
+        </select>
+    </section>
+
+    <section class="upload-section">
+
+        <h2>Upload Document</h2>
+
+        <input
+            type="file"
+            id="documentFile"
+            accept=".pdf,.jpg,.jpeg,.png">
+
+        <br><br>
+
+        <button onclick="analyzeDocument()">
+            Detect Forgery
+        </button>
+
+    </section>
+
+    <section class="result-section">
+
+        <h2>Analysis Result</h2>
+
+        <div id="result">
+
+            <p>Document Type: -</p>
+            <p>Font Match: -</p>
+            <p>Layout Match: -</p>
+            <p>Metadata Match: -</p>
+            <p>Authenticity Score: -</p>
+            <p>Status: Waiting for upload</p>
+
+        </div>
+
+    </section>
+
+    <section class="chatbot-section">
+
+        <h2>AI Assistant</h2>
+
+        <input
+            type="text"
+            id="userMessage"
+            placeholder="Ask your question">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+        <div id="chatResponse"></div>
+
+    </section>
+
+    <footer>
+        <p>Mini Hackathon Project - FakeDoc Detector</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
